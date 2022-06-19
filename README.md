@@ -1,2 +1,2 @@
 # R_Analysis
-Use tidyverse and jsonlite to clean data in, then use ggplot2 to visualize the results
+Use jsonlite to query an API and tidyverses' dplyr, tidyr and ggplot2 libraries to clean/visualize data.
