@@ -2,7 +2,6 @@ library(tidyverse)
 mechaCarMpg <- read.csv('MechaCar_mpg.csv')
 suspensionCoil <- read.csv('Suspension_Coil.csv')
 
-suspensionCoil$Manufacturing_Lot <- factor(suspensionCoil$Manufacturing_Lot)
 mpgLinReg <- lm(mpg~AWD+ground_clearance+spoiler_angle+vehicle_weight+vehicle_length,mechaCarMpg)
 summary(mpgLinReg)
 
@@ -10,6 +9,7 @@ summary(mpgLinReg)
 total_summary <- suspensionCoil %>% summarize(c(mean(PSI)),c(median(PSI)),c(var(PSI)),c(sd(PSI)))
 sample_table <- suspensionCoil %>% sample_n(50)
 t.test(log10(sample_table$PSI),mu=mean(log10(suspensionCoil$PSI)))
+
 
 lot_summary <- suspensionCoil %>% group_by(Manufacturing_Lot) %>% 
   summarize(c(mean(PSI)),c(median(PSI)),c(var(PSI)),c(sd(PSI)))
