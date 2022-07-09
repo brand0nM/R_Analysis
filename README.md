@@ -1,6 +1,6 @@
 # R_Analysis
 ## Overview
-Determine which metrics have the most profound impact on a cars mileage. Additionally, determine if suspension coil production is statistically similar
+Determine which metrics have the most profound impact on a cars mileage. Additionally, decide if suspension coil production is statistically similar.
 
 ### Purpose 
 Factors like vehicle length, weight, spoiler angle, drivetrain, and ground clearance, were collected on each vehicle. Using R's tidyverse package, clean the data and design a linear model that predicts the mpg using several variables from the MechaCar_mpg.csv
