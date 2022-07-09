@@ -9,9 +9,7 @@ Factors like vehicle length, weight, spoiler angle, drivetrain, and ground clear
 ### Linear Regression to Predict MPG
 <img width="740" alt="Screen Shot 2022-07-09 at 7 15 51 AM" src="https://user-images.githubusercontent.com/79609464/178107386-53012759-756f-45fe-a837-f88b9200966f.png"><br />
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Is the slope of the linear model considered to be zero? Why or why not?
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+This Linear model accounts for ~71.5% of mileage variance- the multiple R^2 value. From the Pr(>|t|) values, one can conclude the Spoiler-Angle and Drivetrain are the most impactful factors while the vehicle length and clearance are the least. Finally, we can reject the NULL hypothesis since a p-Value of 5.35e-11 is less than .05; This means the slope of our line is non-zero and a strong correlation does exist between the considered variables.
 
 ### Summary Statistics on Suspension Coils
 <img width="370" alt="Screen Shot 2022-07-09 at 7 26 15 AM" src="https://user-images.githubusercontent.com/79609464/178107810-f7210da5-d6b8-4621-af92-3d3e33eb0217.png"><br />
@@ -19,12 +17,21 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
+Since the Variance of the overall suspension coils is less than 100 pounds/ square inch the MechaCar meets the design specifications. Upon closer inspection, it appears cars from lot 3 have a significantly higher variance of 170 pounds/ square inch, and thus do not meet manufacturing criteria
+
 ### T-Tests on Suspension Coils
-then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
-<img width="438" alt="Screen Shot 2022-07-09 at 7 32 00 AM" src="https://user-images.githubusercontent.com/79609464/178108077-5a4f6c8f-2bb4-42fa-a98a-b37bef3232af.png">
-<img width="625" alt="Screen Shot 2022-07-09 at 7 32 27 AM" src="https://user-images.githubusercontent.com/79609464/178108081-d34d6d0a-2f42-4bc5-a1f8-e554c7381641.png">
-<img width="624" alt="Screen Shot 2022-07-09 at 7 32 40 AM" src="https://user-images.githubusercontent.com/79609464/178108086-bfe6166a-02f2-42e0-9c8e-e1a6392a5b51.png">
-<img width="621" alt="Screen Shot 2022-07-09 at 7 32 56 AM" src="https://user-images.githubusercontent.com/79609464/178108098-05926653-9060-4624-8590-d5d7ee457e37.png">
+#### All Lots
+<img width="433" alt="Screen Shot 2022-07-09 at 7 57 12 AM" src="https://user-images.githubusercontent.com/79609464/178108989-4d60de21-13ed-4e4b-9b5a-c5a30c865b52.png">
+
+#### Lot 1
+<img width="569" alt="Screen Shot 2022-07-09 at 7 57 21 AM" src="https://user-images.githubusercontent.com/79609464/178108990-43184ed0-c1bf-4d72-8672-0dfe3d9ceb6f.png">
+
+#### Lot 2
+<img width="574" alt="Screen Shot 2022-07-09 at 7 57 32 AM" src="https://user-images.githubusercontent.com/79609464/178108993-15b7245b-4a33-4091-b6b2-e114cc5a09b9.png">
+
+#### Lot 3
+<img width="576" alt="Screen Shot 2022-07-09 at 7 57 40 AM" src="https://user-images.githubusercontent.com/79609464/178108995-38a135d8-10f1-4b77-a905-22423bb17507.png">
+
 ### Study Design: MechaCar vs Competition
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
 In your description, address the following questions:
